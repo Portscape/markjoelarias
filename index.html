@@ -6,9 +6,19 @@
     <title>Mark Joel Arias - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles.css">
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.remove('home');
+            } else {
+                header.classList.add('home');
+            }
+        });
+    </script>
 </head>
 <body>
-    <header>
+    <header class="home"> <!-- Add 'home' class to header by default -->
         <h1>Mark Joel Arias</h1>
         <p>Graphic Designer</p>
         <nav>
