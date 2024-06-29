@@ -7,19 +7,19 @@ body {
 }
 
 header {
-    background-color: #222; /* Default black background */
+    background-color: #222;
     color: #fff;
-    padding: 1em 2em; /* Added padding for better spacing */
-    text-align: left; /* Align text to the left */
+    padding: 1em 2em; 
+    text-align: left; 
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    transition: background-color 0.3s ease; 
 }
 
 header.home {
-    background-color: #000; /* Larger black background for home screen */
-    padding: 2em; /* Larger padding for home screen */
+    background-color: #000; 
+    padding: 2em; 
 }
 
 header h1 {
@@ -47,7 +47,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-right: 1em; /* Adjust spacing between nav items */
+    margin-right: 1em; 
 }
 
 header nav ul li a {
@@ -58,7 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff6347; /* Color on hover */
+    color: #ff6347; 
 }
 
 main {
