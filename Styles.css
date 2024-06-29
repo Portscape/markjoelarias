@@ -7,14 +7,19 @@ body {
 }
 
 header {
-    background-color: #222;
+    background-color: #222; /* Default black background */
     color: #fff;
-    padding: 1em 2em;
+    padding: 1em 2em; /* Added padding for better spacing */
     text-align: left; /* Align text to the left */
     position: sticky;
     top: 0;
     z-index: 1000;
-    animation: slideIn 1s ease-out;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+header.home {
+    background-color: #000; /* Larger black background for home screen */
+    padding: 2em; /* Larger padding for home screen */
 }
 
 header h1 {
@@ -53,7 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff6347;
+    color: #ff6347; /* Color on hover */
 }
 
 main {
@@ -98,17 +103,6 @@ footer p {
 }
 
 /* Animations */
-@keyframes slideIn {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 @keyframes fadeInDown {
     from {
         transform: translateY(-20px);
