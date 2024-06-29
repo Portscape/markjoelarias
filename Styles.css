@@ -10,7 +10,7 @@ header {
     background-color: #222;
     color: #fff;
     padding: 2em 0;
-    text-align: center;
+    text-align: left;
     position: sticky;
     top: 0;
     z-index: 1000;
