@@ -9,8 +9,8 @@ body {
 header {
     background-color: #222;
     color: #fff;
-    padding: 2em 0;
-    text-align: center;
+    padding: 1em 2em;
+    text-align: left; /* Align text to the left */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,16 +29,20 @@ header p {
     animation: fadeInDown 1.2s ease-out;
 }
 
+header nav {
+    margin-top: 1em;
+}
+
 header nav ul {
     list-style: none;
     padding: 0;
-    margin: 1em 0 0;
+    margin: 0;
     animation: fadeInDown 1.4s ease-out;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin-right: 1em; /* Adjust spacing between nav items */
 }
 
 header nav ul li a {
