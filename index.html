@@ -41,5 +41,20 @@
     <footer>
         <p>&copy; 2024 Mark Joel Arias</p>
     </footer>
+
+        <script type="text/javascript">
+        var lastScrollTop = 0;
+        var navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = "-200px"; // Hide navbar
+            } else {
+                navbar.style.top = "0"; // Show navbar
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 </html>
