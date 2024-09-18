@@ -6,34 +6,35 @@
     <title>Mark Joel Arias - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles.css">
+    <style>
+        /* Inline styles for background image */
+        header {
+            background-image: url('Backg.jpg'); /* Initial background image */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Mark Joel Arias</h1>
-        <p>Graphic Designer</p>
-        <nav>
-            <ul>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Project.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="navbar">
+        <header>
+            <h1>Hello there!</h1>
+            <p>I'm <b>Mark Joel Arias</b> and I'm a <b>Graphic Designer</b></p>
+            <nav>
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </nav>
 
     <main>
         <section>
             <h2>Welcome to My Portfolio</h2>
-            <p>Explore my work and learn more about my skills and experience as a graphic designer. 
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
-            As a skilled professional specializing in both graphic design and video editing, I make stunning designs and captivating videos. I am quite proficient in the layout, typography, color theory, and compositional rules of graphic design. As a skilled artist, my goal is to combine my technical knowledge with my artistic flair to create visually stunning and emotionally compelling content that captivates audiences and aids my clients in achieving their goals. These abilities allow me to create compelling designs that effectively communicate messages and capture the desired tone and visually appealing designs.
+            <p>Explore my work and learn more about my skills and experience as a graphic designer.
+                "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
             </p>
         </section>
     </main>
@@ -42,17 +43,32 @@
         <p>&copy; 2024 Mark Joel Arias</p>
     </footer>
 
-        <script type="text/javascript">
+    <script>
+        // JavaScript code to control navbar and header behavior
         var lastScrollTop = 0;
         var navbar = document.getElementById("navbar");
+        var header = document.querySelector("header");
+        var scrollNavbar = document.createElement('div');
+        scrollNavbar.id = 'scrollNavbar';
+        scrollNavbar.innerHTML = '<ul><li><a href="About.html">About</a></li><li><a href="Project.html">Projects</a></li><li><a href="Contact.html">Contact</a></li></ul>';
+        document.body.appendChild(scrollNavbar);
 
         window.addEventListener("scroll", function() {
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-                navbar.style.top = "-200px"; // Hide navbar
+            
+            // Calculate the opacity based on scroll position
+            var opacity = 1 - (scrollTop / (header.offsetHeight * 0.8));
+            header.style.opacity = opacity < 0 ? 0 : opacity;
+
+            // Toggle solid background for navbar based on scroll position
+            if (scrollTop > header.offsetHeight * 0.8) {
+                navbar.classList.add("scrolled");
+                scrollNavbar.classList.add("active");
             } else {
-                navbar.style.top = "0"; // Show navbar
+                navbar.classList.remove("scrolled");
+                scrollNavbar.classList.remove("active");
             }
+
             lastScrollTop = scrollTop;
         });
     </script>
